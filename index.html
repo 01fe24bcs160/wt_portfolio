@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vie" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Integrated Student Portfolio for Web Technologies and Software Engineering">
+    <title>Student Portfolio - Web Dev & Software Engineering</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/50" alt="Profile Picture" class="profile-pic" id="nav-profile-pic">
+                <div class="logo-text">
+                    <h1>Naina</h1>
+                    <p>Semester 4 - CSE</p>
+                </div>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#course-project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2 class="greeting">Hello, I'm</h2>
+                <h1 class="hero-title">Naina</h1>
+                <h3 class="hero-subtitle"></h3>
+                <p class="hero-desc">Passionate about building beautiful, functional, and scalable web applications.</p>
+                <div class="hero-cta">
+                    <a href="#course-project" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <!-- Abstract glowing orbs for aesthetics -->
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container glass-panel">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Academic Background</h3>
+                        <p>I am a dedicated student pursuing a degree in <strong>[Your Degree/Major]</strong>. Throughout my academic journey, I have developed a strong foundation in computer science principles and software engineering practices.</p>
+                        
+                        <h3>Passion & Interest</h3>
+                        <p>My primary interest lies in <strong>Web Development</strong> and <strong>Software Engineering</strong>. I am fascinated by how modern web technologies can be used to solve complex problems and deliver seamless user experiences. I continually strive to learn new frameworks and best practices to build robust, scalable applications.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/300" alt="About Me Illustration" class="about-img-placeholder">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Technical Skills</h2>
+                <div class="skills-grid">
+                    
+                    <!-- Frontend -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML & CSS</span>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="70%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Express.js</span>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="60%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-database"></i> Database</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>Beginner</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="50%"></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning and Assignments Section -->
+        <section id="assignments" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Learning & Assignments</h2>
+                <div class="timeline">
+                    
+                    <!-- Assignment 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <h3>Assignment 1: HTML & CSS</h3>
+                            <h4>Personal Blog Website</h4>
+                            <p><strong>Description:</strong> A responsive website to publish blogs.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, Bootstrap</p>
+                            <p><strong>Features:</strong> Grid-based layout, Hover effects and animations.</p>
+                            <p><strong>Challenges & Solutions:</strong> Responsive design issues solved using media queries.</p>
+                            <p><strong>Reflection:</strong> Improved understanding of layouts and styling.</p>
+                            <div class="assignment-assets">
+                                <a href="#" class="asset-link"><i class="fab fa-github"></i> Code Snippet</a>
+                                <a href="#" class="asset-link"><i class="fas fa-video"></i> Demo Recording</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assignment 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <h3>Assignment 2: JavaScript</h3>
+                            <h4>To-Do List Application (Evaluation 1)</h4>
+                            <p><strong>Description:</strong> Manage daily tasks dynamically.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                            <p><strong>Features:</strong> Add, edit, delete, mark tasks as complete.</p>
+                            <p><strong>Challenges:</strong> DOM manipulation & local storage handling.</p>
+                            <p><strong>Reflection:</strong> Learned event handling and state persistence.</p>
+                            <div class="assignment-assets">
+                                <a href="#" class="asset-link"><i class="fab fa-github"></i> Code & Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assignment 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <h3>Assignment 3: Node.js & Express</h3>
+                            <h4>RESTful API (Evaluation 2)</h4>
+                            <p><strong>Description:</strong> Backend API for CRUD operations.</p>
+                            <p><strong>Technologies:</strong> Node.js, Express</p>
+                            <p><strong>Features:</strong> RESTful routes, Middleware for validation, Optional authentication.</p>
+                            <p><strong>Challenges:</strong> API routing and middleware logic.</p>
+                            <p><strong>Reflection:</strong> Understood backend architecture.</p>
+                            <div class="assignment-assets">
+                                <a href="#" class="asset-link"><i class="fab fa-github"></i> Code & Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assignment 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <h3>Assignment 4: React</h3>
+                            <h4>Frontend Application (Evaluation 3)</h4>
+                            <p><strong>Description:</strong> SPA using third-party APIs (e.g., Movie Search / Weather Dashboard).</p>
+                            <p><strong>Technologies:</strong> React, CSS, API</p>
+                            <p><strong>Features:</strong> React Hooks, Dynamic rendering.</p>
+                            <p><strong>Challenges:</strong> State & async handling.</p>
+                            <p><strong>Reflection:</strong> Improved component-based thinking.</p>
+                            <div class="assignment-assets">
+                                <a href="#" class="asset-link"><i class="fab fa-github"></i> Code & Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assignment 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <h3>Assignment 5: MERN Stack</h3>
+                            <h4>Full-Stack MERN App</h4>
+                            <p><strong>Description:</strong> End-to-end CRUD application (Structured Enquiry).</p>
+                            <p><strong>Technologies:</strong> MongoDB, Express, React, Node.js</p>
+                            <p><strong>Features:</strong> User authentication, Full CRUD integration.</p>
+                            <p><strong>Challenges:</strong> Frontend-backend integration.</p>
+                            <p><strong>Reflection:</strong> Real-world full-stack experience.</p>
+                            <div class="assignment-assets">
+                                <a href="#" class="asset-link"><i class="fab fa-github"></i> Code & Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrated Course Project Section -->
+        <section id="course-project" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Integrated Course Project</h2>
+                <h3 class="text-center project-subtitle">Web Technologies & Software Engineering</h3>
+                
+                <div class="project-tabs glass-panel">
+                    <!-- Project Navigation (simplified to stacked cards for better readability) -->
+                    
+                    <div class="project-section">
+                        <h4><i class="fas fa-users"></i> A. Team Details</h4>
+                        <ul>
+                            <li><strong>Member 1:</strong> [Name] (USN/Roll No)</li>
+                            <li><strong>Member 2:</strong> [Name] (USN/Roll No)</li>
+                        </ul>
+                        <img src="https://via.placeholder.com/600x300" alt="Group Photograph" class="project-img">
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-info-circle"></i> B. Course Project Details</h4>
+                        <p><strong>Project Title:</strong> [Your Project Title Here]</p>
+                        <p><strong>Problem Statement:</strong> [Describe the problem being solved]</p>
+                        <p><strong>Objectives and Motivation:</strong> [Why this project? What are the goals?]</p>
+                        <p><strong>Target Users:</strong> [Who is this for?]</p>
+                        <p><strong>Technologies Used:</strong> [List Tech Stack]</p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-list-check"></i> C. Problem Analysis & Requirement Specification</h4>
+                        <ul>
+                            <li>Sprints details and SCRUM roles</li>
+                            <li>User Stories and acceptance criteria</li>
+                            <li>Non-Functional Requirements</li>
+                            <li>Use Case Diagram</li>
+                            <li>Client Interaction Images</li>
+                        </ul>
+                        <div class="image-gallery">
+                            <img src="https://via.placeholder.com/300x200?text=Use+Case+Diagram" alt="Diagram Placeholder">
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-sitemap"></i> D. System Design</h4>
+                        <ul>
+                            <li>Architecture Diagram (UML)</li>
+                            <li>Context Model</li>
+                            <li>Activity Diagram (any one functionality)</li>
+                            <li>Sequence Diagram (any one functionality)</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-code"></i> E. Implementation</h4>
+                        <p><strong>Module-wise description:</strong> [Brief details...]</p>
+                        <div class="image-gallery">
+                            <img src="https://via.placeholder.com/300x200?text=Screenshot+1" alt="UI Screenshot">
+                            <img src="https://via.placeholder.com/300x200?text=Screenshot+2" alt="UI Screenshot">
+                        </div>
+                        <p><strong>Video Demo:</strong> [Embed Link / Recording]</p>
+                        <p><strong>GitHub:</strong> <a href="#" class="link-highlight">[GitHub Link for Project Code]</a></p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-vial"></i> F. Software Testing</h4>
+                        <ul>
+                            <li>Test Plan & Test Cases</li>
+                            <li>Testing Tools Used</li>
+                        </ul>
+                        <div class="image-gallery">
+                            <img src="https://via.placeholder.com/300x200?text=Test+Result+1" alt="Test Result Placeholder">
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-certificate"></i> G. DevOps Certification</h4>
+                        <p>[Upload / Embed Certificate Image Here]</p>
+                        <p><strong>Learning Reflection:</strong> [What you learned from DevOps training]</p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-brain"></i> H. Final Reflection</h4>
+                        <ul>
+                            <li><strong>Learning Outcomes:</strong> [What did you learn overall?]</li>
+                            <li><strong>Challenges Faced:</strong> [Key difficulties and how you overcame them]</li>
+                            <li><strong>Skills Gained:</strong> [Hard and soft skills]</li>
+                            <li><strong>Team Collaboration:</strong> [Experience working in a team]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Contact Me</h2>
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out if you have any questions or want to collaborate!</p>
+                        <ul class="contact-links">
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:your.professional.email@domain.com">your.professional.email@domain.com</a></li>
+                            <li><i class="fab fa-github"></i> <a href="#" target="_blank">github.com/yourusername</a></li>
+                            <li><i class="fab fa-linkedin"></i> <a href="#" target="_blank">linkedin.com/in/yourusername</a></li>
+                            <li><i class="fas fa-globe"></i> <a href="#" target="_blank">Deployed Project URL</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- References Section -->
+        <section id="references" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">References</h2>
+                <div class="references-list glass-panel">
+                    <ul>
+                        <li><i class="fas fa-book"></i> Course Material: [Course Name / Professor Name]</li>
+                        <li><i class="fas fa-link"></i> Online Documentation: MDN Web Docs, React Docs, Node.js Docs</li>
+                        <li><i class="fas fa-icons"></i> Font Awesome for Icons</li>
+                        <li><i class="fas fa-font"></i> Google Fonts (Inter & Outfit)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Naina. Created for Web Technologies and Software Engineering Course.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
